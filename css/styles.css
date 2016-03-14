@@ -1,0 +1,32 @@
+label {
+  width: 20%;
+}
+input {
+  width: 79%;
+}
+textarea {
+  width:79%;
+}
+input[type=submit] {
+  width:99%;
+}
+label, input, textarea {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.card {
+  border:2px solid black;
+  border-radius:10px;
+  margin:10px;
+  width:100px;
+  height:100px;
+}
+
+.back {
+    background: orange;
+}
+
+.front {
+  background: white;
+}
