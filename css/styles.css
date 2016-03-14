@@ -34,3 +34,6 @@ label, input, textarea {
 .front {
   background: white;
 }
+.gameBoard {
+  background-color: orange;
+}

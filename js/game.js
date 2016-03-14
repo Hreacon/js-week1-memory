@@ -16,7 +16,7 @@ exports.gameBoard = function(height, width) {
         }
       }
       cards[i] = value;
-      board.append("<div class='card back' id='"+i+"'></div>");
+      board.append("<div class='card back' id='"+i+"'>?</div>");
     }
     return cards;
 };

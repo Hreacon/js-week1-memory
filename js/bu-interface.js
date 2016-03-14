@@ -26,7 +26,7 @@ $(document).ready(function() {
             $(this).removeClass('selected');
             $(this).removeClass('front');
             $(this).addClass('back');
-            $(this).html('');
+            $(this).html('?');
           });
         }, 500);
 
@@ -38,9 +38,11 @@ $(document).ready(function() {
       // first card chosen
       $(this).addClass('selected');
     }
-    $('.moveCount').html( parseInt($('.moveCount').html())+1 );
+    if($(this).hasClass('back')) {
+      $('.moveCount').html( parseInt($('.moveCount').html())+1 );
+    }
+    $(this).html(cards[$(this).attr("id")]);
     $(this).removeClass('back');
     $(this).addClass('front');
-    $(this).html(cards[$(this).attr("id")]);
   });
 });
